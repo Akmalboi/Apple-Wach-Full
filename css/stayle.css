@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html{
+    font-size: 10px;
+}
+:root{
+    --color1:#333333;
+    --color2:#EA625C;
+    --color3:#666666;
+    --color4:#dddddd;
+    --color5:#777777;
+    --color6:#888888;
+    --color7:#fff;
+    --color8:#222222;
+    --color:#000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.navbar{
+    padding-top: 3rem ;
+}
+.container{
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 1rem;
+ 
+}
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 4rem;
+    height: 4rem;
+}
+.logo img{
+    width: inherit;
+    height: inherit;
+}
+.list li {
+    display: inline-block;
+}
+.list li:not(:last-child){
+    margin-right: 3rem;
+}
+.list li a{
+    font-size: 1.5rem;
+    line-height: 150%;
+    text-align: center;
+    color:var(--color1);
+    transition: 1.5s;
+}
+.list li a:hover{
+    color: var(--color2);
+    cursor: pointer;
+}
+.list li a:active{
+    opacity: .6;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.help{
+    font-size: 1.5rem;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color3);
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--color1);
+}
+.hero{
+
+    padding-bottom: 183px;
+    border-bottom: 0.2rem solid var(--color4);
+    background-image: url(../img/intro-bg\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: 587px 565px;
+    background-position: right -197px bottom;
+}
+.hero-info {
+    padding-top: 24.2rem;
+    width: 490px;
+}
+.hero-info h1{
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 120%;
+    margin-bottom: 3rem;
+}
+.hero-info p{
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: var(--color5);
+    border-left: 3px solid var(--color6);
+    padding-left: 40px;
+    margin-bottom: 3rem;
+}
+.site-btn{
+    align-items: center;
+    padding: 1.2rem;
+    width: 260px;
+    height: 51px;
+    background: var(--color2);
+    border: none;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--color7);
+    border: 2px solid var(--color2);
+    transition: .3s;
+}
+.site-btn:hover{
+    background:transparent ;
+    color: var(--color2);
+    
+}
+.site-btn:active{
+    opacity: .6;
+}
+
+
+
+.about-item{
+    padding: 7rem 0;
+}
+.about-item{
+    width: 280px;
+    transition: 1s;
+}
+.about-item:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.about-item h2{
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--color8);
+    margin-bottom: 3rem;
+}
+.about-item p{
+    font-size: 1.5rem;
+    line-height: 160%;
+    color: var(--color1);
+    margin-bottom: 2rem;
+}
+.agains {
+    display: flex;
+    gap: 10px;
+}
+.again{
+    width: 8px;
+    height: 8px;
+    background: var(--color4);
+}
+.learn{
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 160%;
+    text-transform: uppercase;
+    color:var(--color2);
+    position: relative;
+    margin-left: 5rem;
+}
+.learn::before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    background-color:var(--color2);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -50px;
+}
+.about-contact{
+    display: flex;
+    justify-content: space-between;
+}
+.offer{
+    padding:7rem 0;
+}
+.offer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.offer-info{
+    width: 490px;
+}
+.offer-img{
+    width: 400px;
+}
+.offer-info h1, .serise-info h1{
+    font-weight: 700;
+    font-size:5rem;
+    line-height: 120%;
+    color: var(--color);
+    margin-bottom: 3rem;
+}
+.offer-info p, .serise-info p{
+    margin-bottom: 3rem;
+    padding-left: 4rem;
+    border-left: 3px solid var(--color6);
+    font-size: 1.6rem;
+    line-height: 150%;
+    color:var(--color5);
+}
+.servis{
+    background-image: url(../img/futtor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.serise-info{
+    padding: 24rem 0;
+    width: 490px;
+    margin-left: auto;
+    color: var(--color7);
+}
+.serise-info h1{
+    color: var(--color7);
+}
+.serise-info p{
+    color: var(--color7);
+    border-left: 3px solid var(--color7);
+}
+
+
+
+
+
+
